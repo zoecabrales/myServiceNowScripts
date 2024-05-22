@@ -1,0 +1,18 @@
+<div class="background-container" ng-style="{'background-image': 'url(' + c.backgroundImage + ')'}">
+    <div class="overlay">
+      <h1 class="welcome-heading">Welcome to ServiceNow Portal</h1>
+      <p class="welcome-subheader">Log in to order things, get help or report an issue</p>
+      <h3 class="auth-paragraph">Select your authentication provider</h3>
+      <div class="auth-container">
+        <div class="auth-option" ng-repeat="provider in c.authProviders">
+          <a ng-href="{{provider.url}}" class="auth-link">
+            <div class="auth-box">
+              <img ng-src="{{provider.logo}}" alt="{{provider.name}} logo">
+              <h3>{{provider.name}}</h3>
+              <p>{{provider.description}}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>

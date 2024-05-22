@@ -1,0 +1,81 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .welcome-heading, .welcome-subheader, .auth-paragraph {
+     padding-left: 30px;
+  }
+  
+  .background-container {
+    position: relative;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .auth-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: stretch;
+    width: auto;
+  }
+  
+  .auth-option {
+    flex: 0 0 auto;
+    margin: 0 10px;
+  }
+  
+  .auth-link {
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+  }
+  
+  .auth-box {
+    background: #1e8476;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: background 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    color: white;
+  }
+  
+  .auth-box:hover {
+    background: #d0d0d0;
+  }
+  
+  .auth-box img {
+    max-width: 80px;
+    margin-bottom: 10px;
+  }
